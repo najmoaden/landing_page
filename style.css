@@ -164,7 +164,42 @@ header nav .nav-titles button:hover{
     border: 1px solid var(--color-pink);
 }
 
+footer{
+    margin: 0;
+    padding: 20px;
+    padding-top:  4em;
+    background-color: black;
+}
 
+footer .footer-columns{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer-columns h3{
+    color: var(--color-purple);
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer .footer-columns p{
+    cursor: pointer;
+    color: var(--color-light-grey);
+}
+
+footer .footer-columns p:hover{
+    color: white;
+}
+
+footer .footer-end .links {
+    width: 60%;
+    margin: 2em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
 
 @media screen and (max-width: 640px){
     nav .nav-titles p{
