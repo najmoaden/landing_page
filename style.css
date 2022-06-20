@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+:root{
+    --color-purple:#c575bd;
+    --color-pink: #fc9696;
+    --color-light-pink: #ffb0b0;
+    --color-light-grey: #d1d1d1;
+    
+}
+
+*, body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+/* Header Styling */
+header{
+    background: linear-gradient(var(--color-light-pink),var(--color-pink),var(--color-purple));
+}
+
+header nav{
+    padding: 30px 5% 0px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+header nav .nav-titles{
+    display: flex;
+    align-items: center;
+}
+
+header nav .nav-titles p{
+    margin: 0 15px 0 0;
+}
+ 
+header nav .nav-titles p:hover{
+    color: var(--color-purple);
+    cursor: pointer;
+}
+header nav .nav-titles button {
+    padding: 5px 15px;
+    font-size: 1.2em;
+    background-color: inherit;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+}
+header nav .nav-titles button:hover{
+    color: inherit;
+    background-color: var(--color-purple);
+    border: 1px solid var(--color-purple);
+}
+/* Banner Styling */
+.banner{
+    padding: 30px 5%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* Upper Banner */
+.banner .banner-info{
+    width: 100%;
+    flex-shrink: 1;
+}
+
+.banner .banner-info h1{
+    margin: 0;
+    font-size: 4vw;
+    width: 80%;
+}
+
+.banner .banner-info p{
+    font-weight: 400;
+}
+
+.banner .banner-info button{
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.banner .banner-image img{
+    width: 80%;
+    margin: 5%;
+    border-radius: 50%;
+    transition: 250ms ease-in-out, opacity 250ms linear;
+}
+
+.banner .banner-image img:hover{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.banner .banner-image .banner-background{
+    background: var(--color-purple);
+    border-radius: 50%;
+    padding: 100% 100% 0 0;
+    z-index: -1;
+    margin-top: -50%;
+
+}
+
+.hero .banner-info button{
+    background-color: inherit;
+    border: 1px solid white;
+
+}
+
+.hero .banner-info button:hover{
+    background-color: var(--color-purple);
+    border: 1px solid var(--color-purple);
+
+}
+
+.hero .banner-info .banner-details{
+    margin-top: 30px ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero .banner-info .banner-details .banner-detail{
+    margin:0 15px 15px 0 ;
+    border-radius: 50%;
+    transition: filter 0.5s ;
+}
+
+.hero .banner-info .banner-details .banner-detail:hover{
+    filter: brightness(50%);
+}
+
+.hero .banner-info .banner-details .banner-detail img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+
+.middle{
+    margin: 0;
+    background-color: var(--color-purple);
+}
+
+.middle .banner-info button{
+    background-color: inherit;
+    border: 1px solid white;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.middle .banner-info button:hover{
+    background-color: var(--color-pink);
+    border: 1px solid var(--color-pink);
+}
+
+
+
+@media screen and (max-width: 640px){
+    nav .nav-titles p{
+        display: none;
+    }
+    .banner .banner-info h1{
+        font-size: 2em;
+    }
+    .banner .banner-image{
+        display: none;
+    }
+    .hero .banner-info .banner-details .banner-detail img{
+        width: 90px;
+        height: 90px;
+        margin: 5px;
+    }
+}
